@@ -1,4 +1,5 @@
 import cleaner from 'rollup-plugin-cleaner';
+import json from 'rollup-plugin-json';
 import typescript from 'rollup-plugin-typescript';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
@@ -29,6 +30,7 @@ const rollupOptions = {
     cleaner({
       targets: ['dist'],
     }),
+    json(),
     typescript({ lib: ['es5', 'es6', 'dom'], target: 'es5' }),
     resolve(),
     commonjs(),
