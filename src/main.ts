@@ -12,6 +12,7 @@ const preload: TemplatePlugin = {
       placeholder: '无 UI 模式',
       enter: (action, cb) => {
         Hello.sayHello('Hello None');
+        utools.outPlugin();
       },
     },
   },
