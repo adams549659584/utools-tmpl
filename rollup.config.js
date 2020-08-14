@@ -5,7 +5,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import pluginConfig from './plugin.config.js';
 import copy from 'rollup-plugin-copy';
 import replace from 'rollup-plugin-replace';
-import { uglify } from 'rollup-plugin-uglify';
+import { terser } from "rollup-plugin-terser";
 
 /**
  * 当前环境
@@ -50,7 +50,7 @@ const rollupOptions = {
     replace({
       ENV: JSON.stringify(NODE_ENV),
     }),
-    NODE_ENV === 'production' && uglify(),
+    NODE_ENV === 'production' && terser(),
   ],
 };
 export default rollupOptions;
