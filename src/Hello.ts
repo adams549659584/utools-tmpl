@@ -1,5 +1,3 @@
-import { utimes } from 'fs';
-
 export default class Hello {
   static sayHello(message) {
     utools.showMessageBox({
