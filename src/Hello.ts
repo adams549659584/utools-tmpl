@@ -1,13 +1,9 @@
 export default class Hello {
   static sayHello(message) {
-    utools.showMessageBox({
-      message,
-    });
+    return utools.showNotification(message);
   }
 
   static repeat(message) {
-    return utools.showMessageBox({
-      message,
-    });
+    return utools.showNotification(message);
   }
 }
