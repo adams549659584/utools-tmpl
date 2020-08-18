@@ -1,6 +1,6 @@
 {
   "name": "utools-tmpl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "使用 uTools 模板插件的模板",
   "main": "main.ts",
   "scripts": {
